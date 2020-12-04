@@ -1,0 +1,65 @@
+/* SUMMARY 
+
+CSS DOCUMENT
+
+1. Cards Sessions
+
+	1.a Panelists Session's 
+
+	1.b Sponsors logo's 
+
+ 	Note : the class many_logo actually represents: severals sponsors logo's in 1 card
+
+*/ 
+
+/* ---------------------------------------------------
+                    1. CARD SESSION
+----------------------------------------------------- */
+
+.card 
+{
+  margin: auto;
+  text-align: center;
+}
+
+/* ---------------------------------------------------
+                 1.a Panelists Session's 
+----------------------------------------------------- */
+
+
+
+.intervenant_img
+{
+  display: inline-block;
+  height: auto;
+  border-radius: 50%;
+  width: 30%;
+  padding: 10px;
+  overflow: hidden;
+  transition: transform .2s; /* Animation */  
+
+}
+
+.intervenant_img:hover 
+{
+  transform: scale(1.5); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+} 
+
+/* ---------------------------------------------------
+                  1.b Sponsors logo's 
+----------------------------------------------------- */
+
+
+.sponsor_logo
+{
+	width: 200px;
+	vertical-align: middle;
+}
+
+.many_logo 
+{
+	margin: auto;
+	display: block;
+	width: 100px;
+	vertical-align: middle;
+}
