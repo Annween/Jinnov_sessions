@@ -38,7 +38,7 @@ CSS DOCUMENT
 
 .intervenant_img
 {
-  display: inline-block;
+
   height: auto;
   border-radius: 50%;
   width: 30%;
@@ -83,7 +83,8 @@ CSS DOCUMENT
 
 .many_logo 
 {
-	margin-top: 20px;
+	margin-top: 80px;
+	margin-left: 15px;
 	display: block;
 	width: 150px;
 
