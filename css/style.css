@@ -58,15 +58,34 @@ CSS DOCUMENT
 ----------------------------------------------------- */
 
 
-.sponsor_logo
+.sponsor_logo 
 {
 	width: 200px;
+	vertical-align: middle;
 }
+
+#intel
+{
+	margin-top: 95px; 
+}
+
+#jalios
+{
+	margin-top: 105px;
+
+}
+
+#microsoft
+{
+	margin-top: 110px;
+}
+
 
 .many_logo 
 {
-	margin: auto;
+	margin-top: 20px;
 	display: block;
-	width: 100px;
-	vertical-align: middle;
+	width: 150px;
+
 }
+
