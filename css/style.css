@@ -35,7 +35,6 @@ CSS DOCUMENT
 ----------------------------------------------------- */
 
 
-
 .intervenant_img
 {
 
@@ -45,13 +44,16 @@ CSS DOCUMENT
   padding: 10px;
   overflow: hidden;
   transition: transform .2s; /* Animation */  
+  object-fit: contain;
 
 }
+
 
 .intervenant_img:hover 
 {
   transform: scale(1.5); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
 } 
+ 
 
 /* ---------------------------------------------------
                   1.b Sponsors logo's 
@@ -62,6 +64,9 @@ CSS DOCUMENT
 {
 	width: 200px;
 	vertical-align: middle;
+	justify-content: center;
+	margin-left: 10px;
+	object-fit: contain;
 }
 
 #intel
@@ -81,12 +86,20 @@ CSS DOCUMENT
 }
 
 
+
 .many_logo 
 {
-	margin-top: 80px;
-	margin-left: 15px;
-	display: block;
-	width: 150px;
+   margin-top: 80px;
+   margin-left: 15px;
+   display: block;
+   width: 150px;
+   object-fit: contain;
 
 }
 
+#appscho
+
+{
+	margin-top: 100px;
+
+}
