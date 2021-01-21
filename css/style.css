@@ -8,9 +8,12 @@ CSS DOCUMENT
 
 	1.b Sponsors logo's 
 
+	1.c Panelists names'
+
  	Note : the class many_logo actually represents: severals sponsors logo's in 1 card
 
 */
+
 
 
 /* ---------------------------------------------------
@@ -35,9 +38,8 @@ CSS DOCUMENT
 ----------------------------------------------------- */
 
 
-.intervenant_img
+.intervenant_img /* Désigne les images des 3 premières cards*/ 
 {
-  /*position: relative; */
 
   height: auto;
   border-radius: 50%;
@@ -54,53 +56,47 @@ CSS DOCUMENT
 } 
  
 
- table
+.top-three /* Désigne les premières images de la 4ème card */
 {
-	border-spacing : 10px;
-	border-collapse: collapse;
-	width: 100%;
+  margin: 26px 26px 26px 26px;
+  border-radius: 50%;
+  width: 20%;
+  overflow: hidden;
+  transition: transform .2s; /* Animation */  
 }
 
-td
-{
-	align-content: center;
-}
 
-.cinq:hover 
+
+.top-three:hover 
 {
   transform: scale(1.5); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
 } 
  
 
-.dernier /* tableau de la dernière card */ 
-{
-	width: 100%;
-}
 
-#last
-{
-   	margin: 25px 25px 25px 25px;
-	width: 30%;
-}
-
-.names
-{
-	width: 30%;
-}
-
-.complicated
+.complicated /* Désigne les 2 dernières images de la 4ème card */ 
 {
 	border-radius: 50%;
   	width: 20%;
-	margin: 25px 25px 35px 25px;
+	margin: 20px 50px 20px 50px;
+	/* Top, Right, Bottom, Left */ 
 	transition: transform .2s;
-} /* 		haut, ... , bas, ... */ 
+} 
+
+#fifth-one /* Désigne l'image n°5 de la 4ème card */ 
+{
+	margin: 20px 15px 20px 50px;
+	/*Top, Right, Bottom, Left */ 
+}
 
 
 .complicated:hover
 {
 	transform: scale(1.5); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
 }
+
+
+
 
 
 /* ---------------------------------------------------
@@ -160,12 +156,42 @@ td
 }
 
 
-.cinq
+/* ---------------------------------------------------
+                  1.c Panelists names'
+----------------------------------------------------- */
+
+
+table /* Désigne tous tableaux pour positionner les prénoms et noms des intervenants (sauf dernière card) */ 
 {
-  margin: 20px 20px 20px 20px;
-  border-radius: 50%;
-  width: 20%;
-  overflow: hidden;
-  transition: transform .2s; /* Animation */  
+	border-spacing : 10px;
+	border-collapse: collapse;
+	width: 100%;
 }
 
+td /* cellules du tableaux contenant le texte (prénom & noms) */ 
+{
+	align-content: center;
+}
+
+#short_name
+{
+	margin: 10px 0px 10px 23px;
+	/*Top, Right, Bottom, Left */ 
+}
+
+
+.dernier /* Désigne le tableau de la dernière card pour les noms et prénoms*/ 
+{
+	width: 100%;
+}
+
+#last /* désigne les deux images de la dernière card */ 
+{
+   	margin: 15px 25px 15px 25px;
+	width: 30%;
+}
+
+.names /* réajustement des noms et prénoms de la dernière card */ 
+{
+	width: 30%;
+}
